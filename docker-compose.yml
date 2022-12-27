@@ -1,0 +1,5 @@
+version: '3'
+services:
+    testing:
+        build: .
+        working_dir: /e2e
