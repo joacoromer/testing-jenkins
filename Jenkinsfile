@@ -20,7 +20,7 @@ pipeline {
         
         stage('Testing') {
             steps {
-                sh "docker compose up"
+                sh "./start-testing.sh"
             }
         }
         
