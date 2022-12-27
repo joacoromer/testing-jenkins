@@ -20,6 +20,7 @@ pipeline {
         
         stage('Testing') {
             steps {
+                sh "chmod +x start-testing.sh"
                 sh "./start-testing.sh"
             }
         }
