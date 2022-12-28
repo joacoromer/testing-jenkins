@@ -6,3 +6,7 @@ COPY . ./
 
 RUN mkdir ./node_modules
 RUN npm install
+
+ENTRYPOINT ["npx", "cypress", "run"]
+
+CMD ["--spec", "'cypress/e2e/examples/actions.spec.js'"]
